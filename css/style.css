@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: rgb(0, 0, 0);
+  display: flex;
+}
+
+p {
+  color: white;
+}
+h3 {
+  color: white;
+}
+
+h4 {
+  color: white;
+}
+h1 {
+  color: white;
+}
+h2 {
+  color: white;
+}
+div {
+  background-color: rgb(68, 66, 66);
+}
+
+.container {
+  float: left;
+}
+
+.satu {
+  width: 276px;
+
+  float: left;
+  background-image: linear-gradient(45deg, rgb(0, 0, 0), rgb(48, 46, 48));
+  text-align: center;
+  font-size: 75px;
+  padding-top: 20px;
+  margin: 0;
+}
+
+.tiga {
+  background-image: linear-gradient(45deg, rgb(0, 0, 0), rgb(48, 46, 48));
+  text-align: center;
+  font-size: 75px;
+  padding-top: 20px;
+  margin: 0;
+}
+
+.header .judul {
+  margin-left: 5px;
+}
+
+.link {
+  display: inline-block;
+  background-color: rgb(39, 38, 38);
+  color: rgb(226, 154, 106);
+  text-align: center;
+  padding: 10px;
+  margin-right: 5px;
+  margin-top: 3px;
+  margin-left: 3px;
+  border-radius: 10px;
+}
+
+.link:hover {
+  scale: 1.1;
+  background: rgb(226, 154, 106);
+  color: rgb(39, 38, 38);
+}
+
+.artikel {
+  padding: 5px;
+}
+
+p {
+  padding-bottom: 20px;
+}
+
+div .footer p {
+  background-color: rgb(39, 38, 38);
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.satu p {
+  padding-top: 50px;
+  margin-top: 50px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.tiga p {
+  padding-top: 109.4px;
+  margin-top: 79px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 900px;
+    margin: auto;
+  }
+
+  .satu p {
+    margin-top: 50px;
+    padding-top: 10px;
+  }
+
+  .tiga p {
+    margin-top: 30px;
+    padding-top: 60.5px;
+  }
+
+  .tiga {
+    width: 230px;
+  }
+
+  .header {
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+
+  .link {
+    padding: 10px;
+  }
+
+  .judul {
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+        background-color: black;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        text-align: center;
+        padding: 20px;
+        background-image: linear-gradient(
+          45deg,
+          rgb(0, 0, 0),
+          rgb(48, 46, 48),
+          rgb(48, 46, 48),
+          rgb(0, 0, 0)
+        );
+      }
+
+      .welcome {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #ffffff;
+      }
+
+      .subtext {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        color: #bbbfc0;
+      }
+
+      .button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: #fff;
+        background-color: #3498db;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .button:hover {
+        background-color: #2980b9;
+      }
+
+      .footer {
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        text-align: center;
+        font-size: 0.9rem;
+        color: #7f8c8d;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="welcome">welcome special people to my website</h1>
+      <p class="subtext">We are glad to have you here. Explore and enjoy!</p>
+      <a href="latihan.html" class="button">Get Started</a>
+    </div>
+    <div class="footer">
+      <a
+        style="color: #ffffff; text-decoration: none"
+        href="mailto:nawafilsastraaslam@gmail.com"
+        >nawafilsastraaslam@gmail.com</a
+      >
+    </div>
+    <script>
+      // Tentukan username dan password yang diperbolehkan
+      const USERNAME = "sastraganteng";
+      const PASSWORD = "12345";
+
+      function login() {
+        console.log("=== Sistem Login ===");
+
+        // Meminta input username dan password
+        const inputUsername = prompt("Masukkan Username:");
+        const inputPassword = prompt("Masukkan Password:");
+
+        // Validasi username dan password
+        if (inputUsername === USERNAME && inputPassword === PASSWORD) {
+          console.log("Akses diterima. Selamat datang!");
+          alert("Akses diterima. Selamat datang!");
+        } else {
+          console.log("Akses ditolak. Username atau password salah.");
+          alert("Akses ditolak. Username atau password salah.");
+          window.location.href = "https://web-kita.com/404";
+        }
+      }
+
+      // Panggil fungsi login
+      login();
+
+      // Menjalankan sistem login
+      loginSystem();
+    </script>
+  </body>
+</html>
